@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Random Number Guessing Game</title>
+  </head>
+
+  <body>
+    <script>
+      while (true) {
+        const randomNum = Math.ceil(Math.random() * 10);
+        let userNum = prompt("Pick a random number 1-10");
+        userNum = Number(userNum);
+
+        if (userNum === randomNum) {
+          alert("You guessed the right number");
+          break;
+        } else {
+          alert(`You guessed ${userNum} But the right number was ${randomNum}`);
+        }
+      }
+    </script>
+  </body>
+</html>
